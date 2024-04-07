@@ -12,6 +12,8 @@
 }
 body {
     margin: 0%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* LANDING PAGE */
@@ -27,14 +29,21 @@ header{
     display: flex;
     background-color:var(--primary);
     justify-content: space-between;
-    padding: 0px 100px;
-    height: 65px;
+    height: 80px;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 5;
+}
+#Head-L{
+    margin-left: 100px;
 }
 #Head-R{
     display: flex;
     width: 40%;
     justify-content: center;
+    margin-right: 100px;
 }
 #Head-R nav{
     width: 100%;
@@ -57,3 +66,103 @@ header{
 
 
 /* SLIDER */
+
+#Slider{
+    margin-top: 80px;
+}
+
+.Slider-Img{
+    width:100%;
+    height: 75vh;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+.slider-container{
+    position: relative;
+    background-color: black;
+}
+#slider-buttons{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+}
+#slider-buttons button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 30pt;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+#Slider-Cont-Container{
+    position: absolute;
+    top: 0;
+    padding-left: 200px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#Slider-Cont{
+    color: var(--primary);
+    font-size: 40pt;
+    font-family: var(--font);
+    width:50%;
+    line-height: 1.1em;
+    font-weight: 700;
+    transition: opacity 0.5s ease;
+}
+#Slider-Button-Learn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:110px;
+}
+#Slider-Button-Learn button{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--secondary);
+    padding: 10px 20px;
+    font-family: var(--font);
+    color: var(--secondary);
+    font-size: 12pt;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+}
+#Slider-Button-Learn button:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+
+/* HOME ABOUT */
+
+#Home-About-Container{
+    display: flex;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+#Home-About-Img{
+    width:400px;
+    height: 400px;
+    object-fit: cover;
+}
+#Home-About-L{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+#Home-About-R{
+    width:500px;
+}
