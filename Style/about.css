@@ -1,0 +1,118 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ROOT */
+
+:root {
+    --primary: #ffffff;
+    --secondary: #1e1a57;
+    --minimal:#b60905;
+    --font: "Josefin Sans";
+    --bg:rgb(243, 243, 251);
+}
+
+
+/* HEAD */
+
+.About-Head-Container{
+    width:100%;
+    height:40vh;
+    margin-top: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.About-Head-Img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    opacity: 0.3;
+}
+.About-Head-L2{
+    position: absolute;
+    width: 85%;
+    height: 40vh;
+    top:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.About-Head-Logo{
+    width:100px;
+    border-radius: 10px;
+}
+.About-Head-Title{
+    color:white;
+    font-family: var(--font);
+    font-size: 40pt;
+}
+
+/* Company Overview */
+
+.About-CO-Title{
+    color:var(--secondary);
+    font-family: var(--font);
+    font-size: 25pt;
+}
+.About-CO-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:80vh;
+    flex-direction: column;
+}
+.About-CO-D{
+    width:80%;
+}
+.About-CO-P{
+    font-family: var(--font);
+    font-size: 18pt;
+    text-align: justify;
+}
+.About-CO-Span{
+    font-size: 25pt;
+    color: var(--secondary);
+}
+
+/* Vision And Mission */
+
+.About-VM-Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.About-VM-Img{
+    width: 80px;
+}
+.About-VM-Title{
+    font-size: 25pt;
+    font-family: var(--font);
+    color: var(--secondary);
+}
+.About-VM-Card{
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    border-radius: 20px;
+    padding: 40px;
+}
+.About-VM-P{
+    font-family: var(--font);
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 30px;
+}
+.About-VM-P span{
+    color:var(--secondary);
+}
+
+/* Our Core Value */
