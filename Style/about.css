@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:80vh;
+    height:90vh;
     flex-direction: column;
 }
 .About-CO-D{
@@ -70,8 +70,9 @@
 }
 .About-CO-P{
     font-family: var(--font);
-    font-size: 18pt;
+    font-size: 15pt;
     text-align: justify;
+    line-height: 35px;
 }
 .About-CO-Span{
     font-size: 25pt;
@@ -104,6 +105,7 @@
     background-color: var(--bg);
     border-radius: 20px;
     padding: 40px;
+    height: 550px;
 }
 .About-VM-P{
     font-family: var(--font);
@@ -116,3 +118,118 @@
 }
 
 /* Our Core Value */
+
+.About-CV-Container{
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+}
+.About-CV-Title{
+    font-family: var(--font);
+    font-size: 25pt;
+    color: var(--secondary);
+}
+.About-CV-Img{
+    width:80px;    
+    height: 80px;
+}
+.About-CV-Card{
+    background-color: white;
+    border-radius: 20px;
+    width:230px;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    height: 300px;
+}
+.About-CV-D{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+.About-CV-Topic{
+    color: var(--secondary);
+    font-family: var(--font);
+    font-size: 16pt;
+}
+.About-CV-P{
+    font-family: var(--font);
+    text-align: justify;
+    line-height: 24px;
+    font-size: 12pt;
+}
+
+/* Quality Policy */
+
+.About-QP-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+.About-QP-Title{
+    font-family: var(--font);
+    color: var(--secondary);
+    font-size: 25pt;
+}
+.About-QP-D{
+    width: 80%;
+}
+.About-QP-D p{
+    font-family: var(--font);
+    font-size: 18pt;
+    line-height: 30px;
+    text-align: justify;
+}
+.About-QP-D p span{
+    color: var(--minimal);
+}
+.About-QP-D ul li{
+    font-family: var(--font);
+    font-size: 15pt;
+    padding-bottom: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.About-QP-D ul li span{
+    color: var(--secondary);
+}
+
+/* HSE POLICY */
+
+.About-HSE-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 130vh;
+    background-color: var(--bg);
+}
+.About-HSE-Title{
+    font-family: var(--font);
+    color: var(--secondary);
+    font-size: 25pt;
+}
+.About-HSE-D ul li{
+    font-family: var(--font);
+    font-size: 15pt;
+    padding-bottom: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.About-HSE-D ul li span{
+    color: var(--minimal);
+}
+.About-HSE-D{
+    width: 85%;
+}
