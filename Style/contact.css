@@ -1,0 +1,50 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ROOT */
+
+:root {
+    --primary: #ffffff;
+    --secondary: #1e1a57;
+    --minimal:#b60905;
+    --font: "Josefin Sans";
+    --bg:rgb(243, 243, 251);
+}
+
+/* HEAD */
+
+.Contact-Head-Container{
+    width:100%;
+    height:300px;
+    margin-top: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.Contact-Head-Img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    opacity: 0.3;
+}
+.Contact-Head-L2{
+    position: absolute;
+    width: 85%;
+    height: 300px;
+    top:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Contact-Head-Logo{
+    width:100px;
+    border-radius: 10px;
+}
+.Contact-Head-Title{
+    color:white;
+    font-family: var(--font);
+    font-size: 40pt;
+}

@@ -17,7 +17,7 @@
 
 .About-Head-Container{
     width:100%;
-    height:40vh;
+    height:300px;
     margin-top: 80px;
     background-color: black;
     display: flex;
@@ -34,7 +34,7 @@
 .About-Head-L2{
     position: absolute;
     width: 85%;
-    height: 40vh;
+    height: 300px;
     top:80px;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:90vh;
+    height:700px;
     flex-direction: column;
 }
 .About-CO-D{
@@ -83,7 +83,7 @@
 
 .About-VM-Container{
     width: 100%;
-    height: 100vh;
+    height: 800px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -125,7 +125,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 650px;
     flex-direction: column;
 }
 .About-CV-Title{
@@ -174,7 +174,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 700px;
 }
 .About-QP-Title{
     font-family: var(--font);
@@ -212,7 +212,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 130vh;
+    height: 1100px;
     background-color: var(--bg);
 }
 .About-HSE-Title{
