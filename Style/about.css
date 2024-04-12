@@ -26,7 +26,7 @@
 }
 .About-Head-Img{
     width:100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     position: relative;
     opacity: 0.3;
@@ -62,8 +62,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:700px;
     flex-direction: column;
+    padding-top: 40px;
 }
 .About-CO-D{
     width:80%;
@@ -125,8 +125,14 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 650px;
+    padding: 40px 0px;
     flex-direction: column;
+}
+.About-CV-O2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .About-CV-Title{
     font-family: var(--font);
@@ -136,6 +142,10 @@
 .About-CV-Img{
     width:80px;    
     height: 80px;
+}
+.About-CV-O{
+    display: flex;
+    justify-content: center;
 }
 .About-CV-Card{
     background-color: white;
@@ -147,10 +157,11 @@
     flex-direction: column;
     padding: 30px;
     height: 300px;
+    margin: 20px;
 }
 .About-CV-D{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     align-items: center;
 }
@@ -212,7 +223,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 1100px;
+    padding:50px 0px;
     background-color: var(--bg);
 }
 .About-HSE-Title{
@@ -232,4 +243,21 @@
 }
 .About-HSE-D{
     width: 85%;
+}
+
+
+/* RESPONSIVE */
+
+/* WIDTH : 1024px */
+
+@media (min-width: 1024px) and (max-width: 1420px){
+
+    .About-CV-D{
+        flex-direction: column;
+    }
+    .About-CV-Card{
+        width:350px;
+        height: 250px;
+    }
+    
 }
