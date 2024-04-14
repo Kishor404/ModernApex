@@ -80,10 +80,12 @@ header{
 #Slider{
     margin-top: 80px;
 }
-
+.slider-container{
+    height: 70vh;
+}
 .Slider-Img{
     width:100%;
-    height: 550px;
+    height: 70vh;
     object-fit: cover;
     transition: opacity 0.5s ease;
 }
@@ -159,7 +161,7 @@ header{
 #Home-About-Container{
     display: flex;
     width: 100%;
-    height:700px;
+    padding: 60px 0px;
     justify-content: center;
     align-items: center;
     background-color:var(--bg);
@@ -178,12 +180,14 @@ header{
     align-items: center;
 }
 #Home-About-R{
-    width:500px;
-    height: 350px;
+    width:40%;
     display: flex;
     justify-content: space-between ;
     align-items: start;
     flex-direction: column;
+}
+.Title-Hidden{
+    display: none;
 }
 .Home-About-Title{
     font-size: 25pt;
@@ -194,6 +198,7 @@ header{
     font-family: var(--font);
     text-align: justify;
     font-size: 14pt;
+    width: 90%;
 }
 .Home-About-Cont span{
     font-size: 20pt;
@@ -223,28 +228,34 @@ header{
 .Home-Services-Container{
     display: flex;
     width:100%;
-    height: 550px;
+    padding: 30px 0px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 .Home-Services-D{
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
     align-items: center;
+    padding: 40px 0px;
+}
+.Home-Services-O{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 .Home-Services-Title{
     font-size: 25pt;
     font-family: var(--font);
     color: var(--secondary);
 }
-.Home-Services-D div p{
+.Home-Services-Card p{
     color: var(--secondary);
     font-family: var(--font);
     font-size: 15pt;
 }
-.Home-Services-D div{
+.Home-Services-Card{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -297,8 +308,14 @@ header{
     align-items: center;
     flex-direction: column;
     width:350px;
-    height: 400px;
+    padding-bottom: 10px;
     border-radius: 20px;
+}
+.Home-WCU-IO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .Home-WCU-D{
     display: flex;
@@ -307,6 +324,7 @@ header{
 }
 .Home-WCU-P{
     width:310px;
+    height: 100px;
     text-align: justify;
     color: black;
     font-family: var(--font);
@@ -440,16 +458,185 @@ footer p{
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (max-width: 1024px){
+    #Home-About-Img{
+        width:400px;
+    }
+    #Home-About-L{
+        width: 500px;
+    }
+
+    .Home-Services-Card{
+        width: 170px;
+    }
     .Home-WCU-Card{
-        width: 80%;
+        width: 300px;
+    }
+    .Home-WCU-Img{
+        width: 270px;
+    }
+    .Home-WCU-P{
+        width: 260px;
+    }
+    .Home-Contact-D {
+        width: 90%;
+    }
+
+}
+@media (max-width: 768px){
+    #Home-About-Container{
+        flex-direction: column;
+    }
+    #Home-About-L{
+        display: none;
+    }
+    #Home-About-Img{
+        width:500px;
+        height: 250px;
+    }
+    #Home-About-R{
+        align-items: center;
+        width: 70%;
+
+    }
+    .Home-About-Title{
+        display: none;
+    }
+    .Title-Hidden{
+        display:flex;
+    }
+    .Home-About-Cont{
+        width: unset;
+        line-height: 30px;
+    }
+    .Home-Services-D{
+        flex-direction: column;
+        width: 65%;
+    }
+    .Home-Services-O{
+        padding-bottom: 40px;
     }
     .Home-WCU-D{
         flex-direction: column;
         align-items: center;
     }
+    .Home-WCU-Card{
+        flex-direction: row;
+        width:80%;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        padding-right: 20px;
+    }
+    .Home-WCU-IO{
+        padding-left: 20px;
+    }
+    .Home-WCU-P{
+        margin-top: 10px;
+    }
+    .Home-Contact-Img{
+        width:250px;
+        height: 250px;
+    }
+    .Home-Contact-Head{
+        font-size: 18pt;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .Home-WCU-Card{
+        flex-direction: column;
+        padding: 0px;
+    }
     .Home-WCU-Img{
-        width: 570px;
-        margin-top: 20px;
+        width:90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .Home-WCU-IO{
+        padding-left: 0px;
+    }
+    .Home-Contact-D{
+        flex-direction: column;
+    }
+    .Home-Services-Icon{
+        width: 40px;
+    }
+    .Home-Services-D {
+        width:75%;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    .Home-Services-Card{
+        width:100px;
+        height: 80px;
+    }
+    .Home-Services-Card p{
+        font-size: 12pt;
+    }
+    #Slider-Cont{
+        font-size: 20pt;
+        width:50%;
+        padding-left: 0%;
+    }
+    #Slider-Cont-Container{
+        justify-content: center;
+    }
+    #Head-Logo {
+        height: 30px;
+    }
+    #Head-L{
+        margin-left: 40px;
+    }
+    #Head-R{
+        margin-right: 40px;
+    }
+    header{
+        height: 60px;
+    }
+    #Slider{
+        margin-top: 60px;
+    }
+    .Head-Nav-3-Img{
+        width: 20px;
+    }
+    #Head-Nav-List{
+        top:44px;
+    }
+    
+}
+@media (max-width: 400px) {
+    .Home-Services-D {
+        width: 85%;
+    }
+
+}
+@media (max-width: 321px) {
+    #Slider-Cont{
+        font-size: 16pt;
+    }
+    .Home-Services-Icon{
+        width: 30px;
+    }
+    .Home-Services-Card{
+        width:85px;
+        height: 65px;
+    }
+    .Home-Services-Card p{
+        font-size: 10pt;
+    }
+    .Home-WCU-P{
+        width: 85%;
+    }
+    .JJ-Home{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    .Home-Contact-Head{
+        font-size: 15pt;
+    }
+    .Home-Contact-p{
+        font-size: 10pt;
     }
 }

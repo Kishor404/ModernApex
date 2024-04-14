@@ -1,0 +1,125 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ROOT */
+
+:root {
+    --primary: #ffffff;
+    --secondary: #1e1a57;
+    --minimal:#b60905;
+    --font: "Josefin Sans";
+    --bg:rgb(243, 243, 251);
+}
+
+
+/* HEAD */
+
+.Hox-Head-Container{
+    width:100%;
+    height:300px;
+    margin-top: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.Hox-Head-Img{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    opacity: 0.3;
+}
+.Hox-Head-L2{
+    position: absolute;
+    width: 85%;
+    height: 300px;
+    top:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Hox-Head-Logo{
+    width:100px;
+    border-radius: 10px;
+}
+.Hox-Head-Title{
+    color:white;
+    font-family: var(--font);
+    font-size: 40pt;
+}
+
+
+/* DE */
+
+.Hox-De-Container,.Hox-Cont-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg);
+    padding: 50px 5%;
+}
+.Hox-De-U p{
+    font-family: var(--font);
+    font-size: 20pt;
+    color: var(--secondary);
+}
+.Hox-De-D p,.Hox-Cont-2 p{
+    font-family: var(--font);
+    font-size: 15pt;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* Hox-Slider */
+
+#Hox-Slider{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--bg);
+}
+.Hox-slider-container{
+    height: 70vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.Hox-Slider-Img{
+    width:100%;
+    height: 71vh;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    border-radius: 20px;
+    
+}
+.Hox-slider-container{
+    position: relative;
+    background-color: black;
+}
+#Hox-slider-buttons{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+}
+#Hox-slider-buttons button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 30pt;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Hox CONT 2 */
