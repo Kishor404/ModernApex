@@ -61,15 +61,16 @@
 }
 .Contact-O1{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    width:60%;
+    
 }
 .Contact-L{
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 500px;
+    padding: 0px 20px;
+    width: 60%;
     height:350px;
     border-right: 2px solid var(--secondary);
 }
@@ -112,4 +113,82 @@
     color: var(--minimal);
 }
 
-
+@media (max-width:851px) {
+    .Contact-L p,.Contact-R p{
+        font-size: 11pt;
+    }
+    .Contact-L .LTitle, .Contact-R .RTitle{
+        font-size: 13pt;
+    }
+    
+}
+@media (max-width:751px) {
+    .Contact-L{
+        width: 90%;
+    }
+    
+}
+@media (max-width:651px) {
+    .Contact-Container{
+        height: auto;
+        padding: 20px 0px;
+    }
+    .Contact-O1{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .Contact-L{
+        border: none;
+        border-bottom: 2px solid var(--secondary);
+    }
+    .Contact-R{
+        padding: 0px;
+        width: 40%;
+        margin-top: 40px;
+        
+    }
+    .Contact-o{
+        padding-left: 20px;
+    }
+    .Contact-R a{
+        margin-left: 20px;
+    }
+    
+}
+@media (max-width:500px) {
+    .Contact-L p{
+        font-size: 12pt;
+    }
+    .Contact-Head-Title{
+        font-size: 30pt;
+    }
+    .Contact-R {
+        width:60%;
+        align-items: center;
+    }
+    .Contact-L .LTitle{
+        text-align: center;
+        line-height: 24px;
+    }
+    .Contact-L{
+        width: 80%;
+        align-items: center;
+    }
+    .Contact-E{
+        padding: 0px;
+    }
+    .Contact-o{
+        padding-left: 0px;
+    }
+    .Contact-R a{
+        margin-left: 0px;
+    }
+}
+@media (max-width:360px) {
+    .Contact-L p{
+        font-size: 9pt;
+    }
+    .Contact-Head-Title{
+        font-size: 25pt;
+    }
+}

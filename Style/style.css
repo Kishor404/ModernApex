@@ -426,7 +426,7 @@ footer p{
 
 /* NAV BAR  */
 
-@media (min-width: 300px) and (max-width: 1023px){
+@media (min-width: 0px) and (max-width: 800px){
 
     .Head-Nav-3{
         display: flex;
@@ -543,7 +543,7 @@ footer p{
 
 }
 
-@media (max-width: 426px) {
+@media (max-width: 550px) {
     .Home-WCU-Card{
         flex-direction: column;
         padding: 0px;
