@@ -1,34 +1,16 @@
-let Slide = [
-    ["./Assets/Slider/Slider1.jpeg", "Welcome To<br>Modern Apex Electrochemical Works LLC"],
-    ["./Assets/Slider/Slider2.jpeg", "Well Managed Team Work To Satisfi the works."],
-    ["./Assets/Slider/Slider3.jpeg", "Monkey D Luffy Is Son Of Monkey D Dragon."]
-];
-
-let id_Slide = 0;
-const sliderImg = document.querySelector(".Slider-Img");
-const sliderCaption = document.querySelector("#Slider-Cont");
-
-const prevSlide = () => {
-    id_Slide = (id_Slide - 1 + Slide.length) % Slide.length;
-    setSlide();
-};
-
-const nextSlide = () => {
-    id_Slide = (id_Slide + 1) % Slide.length;
-    setSlide();
-};
-
-const setSlide = () => {
-    sliderImg.style.opacity = 0.8;
-    sliderCaption.style.opacity = 0;
-    setTimeout(() => {
-        sliderImg.src = Slide[id_Slide][0];
-        sliderCaption.innerHTML = Slide[id_Slide][1];
-        sliderImg.style.opacity = 1;
-        sliderCaption.style.opacity = 1;
-    }, 500);
-};
-setSlide();
+let slides=[".sc1",".sc2",".sc3"];
+let id=0;
+const nextSlide=()=>{
+    document.querySelector(slides[id]).style="display:none;"
+    id=(id+1)%slides.length;
+    document.querySelector(slides[id]).style="display:flex;"
+}
+const prevSlide=()=>{
+    document.querySelector(slides[id]).style="display:none;"
+    id=(id-1+slides.length)%slides.length;
+    console.log(id)
+    document.querySelector(slides[id]).style="display:flex;"
+}
 
 let intervalId = setInterval(nextSlide, 7000); 
 
