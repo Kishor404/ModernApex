@@ -105,7 +105,6 @@ header{
     width:100%;
     height: 100vh;
     overflow: hidden;
-
 }
 .Slider-Container img{
     width: 100%;
@@ -116,7 +115,17 @@ header{
     animation-name: intro;
     animation-duration: 2s;
     animation-timing-function: ease-out;
-    
+}
+
+.typing-text {
+    font-family:var(--font);
+    font-size: 30pt;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
 }
 .Slider-L1{
     position: absolute;
