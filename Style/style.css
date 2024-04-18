@@ -9,7 +9,7 @@
     --secondary: #1e1a57;
     --minimal:#b60905;
     --font: "Josefin Sans";
-    --bg:rgb(243, 243, 251);
+    --bg:#EEECF4;
 }
 body {
     margin: 0%;
@@ -21,6 +21,10 @@ body {
 /* LANDING PAGE */
 
 /* HEADER */
+
+.JoyBoy{
+    animation: none;
+}
 
 @keyframes intro-Nav{
     0%{top:-80px;}
@@ -318,7 +322,7 @@ header{
     margin-top: 15px;
 }
 .Home-WCU-Card{
-    background-color: rgb(217, 217, 233);
+    background-color:white;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -345,6 +349,7 @@ header{
     color: black;
     font-family: var(--font);
     margin-top: 0px;
+    line-height: 22px;
 }
 .Home-WCU-Card-Title{
     font-family: var(--font);
