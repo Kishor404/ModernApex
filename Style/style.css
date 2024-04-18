@@ -574,14 +574,15 @@ footer p{
 }
 
 @media (max-width: 550px) {
+    .typing-text{
+        font-size: 20pt;
+    }
     .Home-WCU-Card{
         flex-direction: column;
         padding: 0px;
     }
     .Home-WCU-Img{
-        width:90%;
-        margin-left: 5%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
     .Home-WCU-IO{
         padding-left: 0px;
@@ -639,6 +640,9 @@ footer p{
     .Home-Services-D {
         width: 85%;
     }
+    .Home-WCU-Img{
+        margin-top: 5%;
+    }
 
 }
 @media (max-width: 321px) {
@@ -654,6 +658,13 @@ footer p{
     }
     .Home-Services-Card p{
         font-size: 10pt;
+    }
+    .Home-WCU-Card{
+        height: 500px;
+        justify-content: center;
+    }
+    .Home-WCU-Img{
+        width: 220px;
     }
     .Home-WCU-P{
         width: 85%;
