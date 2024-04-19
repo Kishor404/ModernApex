@@ -55,7 +55,38 @@ function typeText() {
 
 }
 
+var Loader;
+
+const LoadNow=(Oppa)=>{
+    if(Oppa<=0){
+        LoadCont();
+    }else if(Oppa<=0.8){
+        console.log("OPP")
+        Loader.style.opacity=Oppa;
+        window.setTimeout(function(){LoadNow(Oppa-0.01)},3)
+    }else if(Oppa<=1){
+        console.log("Poo")
+        Loader.style.opacity=Oppa;
+        window.setTimeout(function(){LoadNow(Oppa-0.01)},50)
+    }
+}
+
+const LoadCont=()=>{
+    document.querySelector("header").style="display:auto;"
+    document.querySelector("main").style="display:auto;"
+    document.querySelector("footer").style="display:auto;"
+    typeText();
+    Loader.style="display:none;";
+}
+
 // Start typing effect when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-    typeText();
+    document.querySelector("header").style="display:none;";
+    document.querySelector("main").style="display:none;";
+    document.querySelector("footer").style="display:none;"
+    Loader=document.querySelector("#Loading");
+    Loader.style="display:flex;";
+    LoadNow(1);
+    
 });
+

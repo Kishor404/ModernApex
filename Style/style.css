@@ -18,6 +18,24 @@ body {
     overflow-x: hidden;
 }
 
+/* LOADING */
+
+#Loading{
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background: white url('../Assets/Loading.gif') no-repeat center center;
+    background-size: 13%;
+}
+#Loading img{
+    width: 20%;
+}
+
 /* LANDING PAGE */
 
 /* HEADER */
@@ -49,6 +67,12 @@ header{
     animation-duration: 1s;
     animation-timing-function: linear;
     /* animation-delay: 0.5s; */
+}
+header::before{
+    background: var(--secondary);
+}
+header::after{
+    background-color: var(--minimal);
 }
 #Head-L{
     margin-left: 100px;
@@ -146,7 +170,7 @@ header{
     overflow: hidden;
     white-space: nowrap;
     animation:
-        title-intro 2.5s steps(40)
+        title-intro 2.5s steps(40) 1s
     
 }
 .next-Slide{
