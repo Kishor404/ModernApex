@@ -79,7 +79,7 @@ header::after{
 }
 #Head-R{
     display: flex;
-    width: 40%;
+    width: 45%;
     justify-content: center;
     margin-right: 100px;
 }

@@ -1,0 +1,86 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ROOT */
+
+:root {
+    --primary: #ffffff;
+    --secondary: #1e1a57;
+    --minimal:#b60905;
+    --font: "Josefin Sans";
+    --bg:rgb(227, 227, 248);
+}
+
+
+
+/* HEAD */
+
+.Clients-Head-Container{
+    width:100%;
+    height:300px;
+    margin-top: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.Clients-Head-Img{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    opacity: 0.3;
+}
+.Clients-Head-L2{
+    position: absolute;
+    width: 85%;
+    height: 300px;
+    top:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Clients-Head-Logo{
+    width:100px;
+    border-radius: 10px;
+}
+.Clients-Head-Title{
+    color:white;
+    font-family: var(--font);
+    font-size: 40pt;
+}
+
+/* CLIENTS BODY */
+
+.Clients-Body-Container{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.Clients-R{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.Clients-C img{
+    width:90%;
+    border-radius: 10px;
+    height: 150px;
+}
+.Clients-C{
+    background-color: var(--bg);
+    width:20%;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+.Clients-C p{
+    font-family: var(--font);
+}
