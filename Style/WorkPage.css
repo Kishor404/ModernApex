@@ -123,3 +123,18 @@
 }
 
 /* Hox CONT 2 */
+
+.Hex-Lo{
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Hex-Lo img{
+    width:60%;
+    height:500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
