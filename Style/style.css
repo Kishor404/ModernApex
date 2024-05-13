@@ -9,7 +9,7 @@
     --secondary: #1e1a57;
     --minimal:#b60905;
     --font: "Josefin Sans";
-    --bg:#EEECF4;
+    --bg:rgb(243, 243, 251);
 }
 body {
     margin: 0%;
