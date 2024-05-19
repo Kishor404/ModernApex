@@ -9,7 +9,7 @@
     --secondary: #1e1a57;
     --minimal:#b60905;
     --font: "Josefin Sans";
-    --bg:rgb(243, 243, 251);
+    --bg:#e6e4f0;
 }
 
 
@@ -27,7 +27,7 @@
 }
 .Clients-Head-Img{
     width:100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     position: relative;
     opacity: 0.3;
@@ -66,14 +66,15 @@
     justify-content: space-evenly;
 }
 .Clients-C img{
-    width:90%;
+    width:100%;
     border-radius: 10px;
-    height: 150px;
+    height: 400px;
+    object-fit: cover;
 }
 .Clients-C{
     background-color: var(--bg);
     width:20%;
-    padding: 15px 0px;
+    padding: 15px 15px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -82,5 +83,60 @@
     border-radius: 20px;
 }
 .Clients-C p{
+    padding-top: 10px;
     font-family: var(--font);
+    text-align: center;
+}
+
+@media screen and (max-width:2000px) {
+    .Clients-C img{
+        height:300px;
+    }
+}
+@media screen and (max-width:1350px) {
+    .Clients-C img{
+        height:250px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .Clients-C img{
+        height:200px;
+    }
+    .Clients-C p{
+        font-size: 12pt;
+    }
+}
+@media screen and (max-width:900px) {
+    .Clients-C img{
+        height:150px;
+        border-radius: 7px;
+    }
+    .Clients-C p{
+        font-size: 10pt;
+    }
+    .Clients-C{
+        padding: 10px 10px;
+        border-radius: 13px;
+    }
+}
+@media screen and (max-width:650px) {
+    .Clients-C img{
+        height:150px;
+        border-radius: 7px;
+    }
+    .Clients-C p{
+        font-size: 10pt;
+    }
+    .Clients-C{
+        padding: 10px 10px;
+        border-radius: 13px;
+        width: 70%;
+    }
+    .Clients-R{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Clients-Head-Title{
+        font-size: 25pt;
+    }
 }

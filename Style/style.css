@@ -9,7 +9,7 @@
     --secondary: #1e1a57;
     --minimal:#b60905;
     --font: "Josefin Sans";
-    --bg:rgb(243, 243, 251);
+    --bg:#e6e4f0;
 }
 body {
     margin: 0%;
@@ -355,7 +355,7 @@ header::after{
     margin-top: 15px;
 }
 .Home-WCU-Card{
-    background-color:white;
+    background-color:#d2cbe2;
     display: flex;
     justify-content: start;
     align-items: center;
