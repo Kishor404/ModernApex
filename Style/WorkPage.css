@@ -59,14 +59,14 @@
     align-items: center;
     flex-direction: column;
     background-color: var(--bg);
-    padding: 50px 5%;
+    padding: 50px 15%;
 }
 .Hox-De-U p{
     font-family: var(--font);
     font-size: 20pt;
     color: var(--secondary);
 }
-.Hox-De-D p,.Hox-Cont-2 p{
+.Hox-De-D p,.Hox-Cont-2 p,.Hox-Cont-2 li{
     font-family: var(--font);
     font-size: 15pt;
     line-height: 30px;

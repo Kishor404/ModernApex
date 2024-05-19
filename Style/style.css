@@ -275,8 +275,8 @@ header::after{
 /* SERVICES */
 
 .Home-Services-Icon{
-    width:80px;
-    height: 80px;   
+    width:60px;
+    height: 60px;   
 }
 .Home-Services-Container{
     display: flex;
@@ -306,7 +306,8 @@ header::after{
 .Home-Services-Card p{
     color: var(--secondary);
     font-family: var(--font);
-    font-size: 15pt;
+    font-size: 12pt;
+    text-align: center;
 }
 .Home-Services-Card{
     display: flex;
@@ -330,7 +331,7 @@ header::after{
 .Home-Services-Card{
     background-color: var(--bg);
     width: 200px;
-    height: 160px;
+    height: 200px;
     border-radius: 20px;
     padding: 20px;
     padding-top: 40px;
@@ -377,7 +378,6 @@ header::after{
 }
 .Home-WCU-P{
     width:310px;
-    height: 100px;
     text-align: justify;
     color: black;
     font-family: var(--font);
