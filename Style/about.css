@@ -12,7 +12,14 @@
     --bg:#e6e4f0;
 }
 
+/* PDF */
 
+.pdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
 
 /* HEAD */
 
