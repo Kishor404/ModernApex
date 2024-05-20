@@ -311,7 +311,7 @@ header::after{
 }
 .Home-Services-Card{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -537,7 +537,7 @@ footer p{
     }
 
 }
-@media (max-width: 768px){
+@media (max-width: 900px){
     #Home-About-Container{
         flex-direction: column;
     }
@@ -581,6 +581,9 @@ footer p{
         margin-bottom: 40px;
         padding-right: 20px;
     }
+    .Home-WCU-Img{
+        height: 300px;
+    }
     .Home-WCU-IO{
         padding-left: 20px;
     }
@@ -597,7 +600,7 @@ footer p{
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
     .typing-text{
         font-size: 20pt;
     }
@@ -606,7 +609,9 @@ footer p{
         padding: 0px;
     }
     .Home-WCU-Img{
-        margin-top: 10%;
+        margin-top: 5%;
+        width: 300px;
+        
     }
     .Home-WCU-IO{
         padding-left: 0px;
@@ -617,17 +622,20 @@ footer p{
     .Home-Services-Icon{
         width: 40px;
     }
+    .Home-Services-Container{
+        padding: 40px 0px;
+    }
     .Home-Services-D {
-        width:75%;
+        width:90%;
         justify-content: space-between;
         padding-bottom: 10px;
     }
     .Home-Services-Card{
-        width:100px;
-        height: 80px;
+        width:130px;
+        
     }
     .Home-Services-Card p{
-        font-size: 12pt;
+        font-size: 10pt;
     }
     #Slider-Cont{
         font-size: 20pt;
@@ -664,8 +672,16 @@ footer p{
     .Home-Services-D {
         width: 85%;
     }
+    .Home-Services-Card{
+        width:100px;
+        
+    }
     .Home-WCU-Img{
         margin-top: 5%;
+    }
+    .Home-WCU-Img{
+        width: 280px;
+        
     }
 
 }
@@ -678,14 +694,15 @@ footer p{
     }
     .Home-Services-Card{
         width:85px;
-        height: 65px;
     }
     .Home-Services-Card p{
         font-size: 10pt;
     }
     .Home-WCU-Card{
-        height: 500px;
         justify-content: center;
+    }
+    .Home-WCU-Card-Title{
+        font-size: 13pt;
     }
     .Home-WCU-Img{
         width: 220px;

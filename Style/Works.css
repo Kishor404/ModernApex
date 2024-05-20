@@ -57,10 +57,10 @@
 .Works-Card{
     background-color: var(--bg);
     width: 20%;
-    height: 350px;
+    padding: 1% 0px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
@@ -70,7 +70,7 @@
     opacity: 0.8;
 }
 .Works-Card img{
-    width:270px;
+    width:90%;
     height: 240px;
     border-radius: 16px;
     object-fit: cover;
@@ -87,6 +87,7 @@
 .Works-L{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -95,4 +96,44 @@
     align-items: center;
 }
 
-
+@media  (max-width:1200px) {
+    .Works-Card{
+        width: 25%;
+    }
+    .Works-Card img{
+        height: 200px;
+    }
+}
+@media  (max-width:900px) {
+    .Works-Card{
+        width: 25%;
+        
+    }
+    .Works-Card img{
+        height: 150px;
+    }
+}
+@media  (max-width:700px) {
+    .Works-Card{
+        width: 80%;
+        margin-bottom: 30px;
+        
+    }
+    .Works-Card img{
+        height: 250px;
+        margin-top: 10px;
+    }
+    .Works-L{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .Works-Head-Title{
+        font-size: 30pt;
+    }
+    .Works-Head-Img,.Works-Head-Container,.Works-Head-L2{
+        height: 200px;
+    }
+    .Works-Head-L2{
+        top:60px;
+    }
+}

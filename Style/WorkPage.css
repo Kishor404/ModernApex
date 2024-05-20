@@ -62,6 +62,7 @@
     padding: 50px 15%;
 }
 .Hox-De-U p{
+    width: 100%;
     font-family: var(--font);
     font-size: 20pt;
     color: var(--secondary);
@@ -137,4 +138,20 @@
     height:500px;
     object-fit: cover;
     border-radius: 20px;
+}
+
+@media  (max-width:700px) {
+    .Hox-Head-Title{
+        font-size: 30pt;
+    }
+    .Hox-Head-Img,.Hox-Head-Container,.Hox-Head-L2{
+        height: 200px;
+    }
+    .Hox-Head-L2{
+        top:60px;
+    }
+    .Hex-Lo img{
+        width:70%;
+        height:300px;
+    }
 }

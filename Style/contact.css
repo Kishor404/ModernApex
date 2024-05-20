@@ -153,6 +153,15 @@
     .Contact-R a{
         margin-left: 20px;
     }
+    .Contact-Head-Title{
+        font-size: 30pt;
+    }
+    .Contact-Head-Img,.Contact-Head-Container,.Contact-Head-L2{
+        height: 200px;
+    }
+    .Contact-Head-L2{
+        top:60px;
+    }
     
 }
 @media (max-width:500px) {
