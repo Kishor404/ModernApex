@@ -14,11 +14,11 @@
 
 /* PDF */
 
-.pdf{
-    display: flex;
+.Flipbook{
+    display:flex ;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    background-color: #EAEBEB;
 }
 
 /* HEAD */
