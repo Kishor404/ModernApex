@@ -31,7 +31,7 @@ const clsNav=()=>{
 
 // Multiline text content to be typed out
 const multilineText = [
-    "Welcome to Modern Apex Electromechanical Works !",
+    "Welcome to Modern Apex Electromechanical Works. ",
     "We provide top-quality services for maintenance, testing, troubleshooting, and installation.",
     "Contact us today for more information."
 ];
