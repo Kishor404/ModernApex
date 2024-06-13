@@ -88,6 +88,12 @@
     text-align: center;
 }
 
+.V-Clients ul li{
+    padding: 30px 0px;
+    font-size: 16pt;
+    font-family: var(--font);
+}
+
 @media screen and (max-width:2000px) {
     .Clients-C img{
         height:300px;
@@ -138,5 +144,9 @@
     }
     .Clients-Head-Title{
         font-size: 25pt;
+    }
+    .V-Clients ul li{
+        font-size: 12pt;
+        padding: 20px 0px;
     }
 }
