@@ -1,0 +1,169 @@
+/* HEAD */
+
+.Trading-Head-Container{
+    width:100%;
+    height:300px;
+    margin-top: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.Trading-Head-Img{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    opacity: 0.3;
+}
+.Trading-Head-L2{
+    position: absolute;
+    width: 85%;
+    height: 300px;
+    top:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Trading-Head-Logo{
+    width:100px;
+    border-radius: 10px;
+}
+.Trading-Head-Title{
+    color:white;
+    font-family: var(--font);
+    font-size: 40pt;
+}
+
+/* Trading About */
+
+.Trading-About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    flex-direction: column;
+}
+.Trading-About div{
+    width: 85%;
+    text-align: justify;
+    font-size: 14pt;
+    font-family: var(--font);
+}
+.Trading-About div p{
+    line-height: 35px;
+}
+.Trading-Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.Trading-Header p{
+    font-size: 20pt;
+    color: var(--minimal);
+}
+
+/* Trading Focus */
+
+.Trading-Focus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #e0e0e0;
+}
+
+.Trading-Focus-Head p{
+    font-size: 18pt;
+    font-family: var(--font);
+    color: var(--minimal);
+}
+.Trading-Focus-Cont{
+    width: 80%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.Trading-Focus-Card{
+    border-radius: 26px;
+    background: #e0e0e0;
+    box-shadow:  13px 13px 26px #b5b5b5,
+                -13px -13px 26px #ffffff;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.Trading-Focus-Card:hover{
+    border-radius: 26px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  13px 13px 26px #b5b5b5,
+                 -13px -13px 26px #ffffff;
+}
+.Trading-Focus-Card div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: justify;
+}
+.Trading-Focus-Card-Iox p{
+    font-size: 13pt;
+    font-family: var(--font);
+    line-height: 23px;
+}
+.Trading-Focus-Card-Title{
+    font-size: 16pt;
+    font-family: var(--font);
+    color: var(--secondary);
+}
+
+/* Trading WCU */
+
+.Trading-WCU-Sec{
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.Trading-WCU{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Trading-WCU-Head{
+    font-family: var(--font);
+    font-size: 16pt;
+    color: var(--minimal);
+}
+.Trading-WCU-Head-Cont{
+    width: 100%;
+}
+.Trading-WCU-Card{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Trading-WCU-Card-Head{
+    width: 100%;
+    font-family: var(--font);
+    font-size: 14pt;
+    color: var(--secondary);
+}
+.Trading-WCU-Card-Cont{
+    width: 90%;
+    font-family: var(--font);
+    font-size: 14pt;
+    line-height: 30px;
+}
