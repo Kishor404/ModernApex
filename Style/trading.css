@@ -74,6 +74,7 @@
     flex-direction: column;
     padding-top: 20px;
     background-color: #e0e0e0;
+    padding-bottom: 50px;
 }
 
 .Trading-Focus-Head p{
@@ -82,10 +83,11 @@
     color: var(--minimal);
 }
 .Trading-Focus-Cont{
-    width: 80%;
     padding: 40px 0px;
-    display: flex;
-    justify-content: space-evenly;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
 
 }
 .Trading-Focus-Card{
@@ -93,7 +95,6 @@
     background: #e0e0e0;
     box-shadow:  13px 13px 26px #b5b5b5,
                 -13px -13px 26px #ffffff;
-    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,4 +167,46 @@
     font-family: var(--font);
     font-size: 14pt;
     line-height: 30px;
+}
+
+@media (max-width:1020px) {
+    .Trading-Focus-Cont{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Trading-Head-Title{
+        font-size: 30pt;
+    }
+}
+@media  (max-width: 550px){
+
+    .Trading-Head-Container{
+        margin-top: 60px;
+    }
+    .Trading-Head-Title{
+        font-size: 25pt;
+    }
+    .Trading-Head-Img,.Trading-Head-Container,.Trading-Head-L2{
+        height: 200px;
+    }
+    .Trading-Head-L2{
+        top:60px;
+    }
+    
+    .Trading-SJK p{
+        font-size: 12pt;
+    }
+    .Trading-Header p{
+        font-size: 15pt;
+    }
+    
+}
+@media  (max-width: 400px){
+
+    .Trading-SJK p{
+        font-size: 10pt;
+    }
+    .Trading-Header p{
+        font-size: 12pt;
+    }
+    
 }
