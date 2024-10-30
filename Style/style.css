@@ -497,6 +497,9 @@ footer p{
     .Head-Nav-x{
         display: none;
     }
+    #Head-R{
+        width: 20%;
+    }
     #Head-Nav-List{
         z-index: 10;
         transform: translate(500px);
@@ -516,8 +519,26 @@ footer p{
     #Head-Nav-List li{
         padding: 20px 0px;
     }
+    .General-But{
+        margin-top: 50px;
+    }
    
    
+}
+
+@media (max-width: 1300px) {
+    #Head-R{
+        width: 60%;
+    }
+}
+@media (max-width: 1300px) {
+    #Head-R{
+        width: 65%;
+    }
+    .General-But{
+        padding: 10px 15px;
+        font-size: 11pt;
+    }
 }
 
 
@@ -691,6 +712,9 @@ footer p{
     .Home-WCU-Img{
         width: 280px;
         
+    }
+    #Head-Nav-List{
+        width: 60%;
     }
 
 }
