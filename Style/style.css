@@ -485,6 +485,17 @@ footer p{
     font-family: var(--font);
 }
 
+.WhatsApp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    z-index: 20;
+    border: 0;
+    background-color: transparent;
+}
+
 /* RESPONSIVE */
 
 /* NAV BAR  */
@@ -626,6 +637,16 @@ footer p{
     }
     .Home-Contact-Head{
         font-size: 18pt;
+    }
+    .WhatsApp{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 60px;
+        height: 60px;
+        z-index: 20;
+        border: 0;
+        background-color: transparent;
     }
 
 }
